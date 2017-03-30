@@ -5,6 +5,9 @@ const config = {
   test: 'test',
   prod: 'prod',
   port: process.env.PORT || 3000,
+  db: {
+    url: process.env.MONGODB_URI || ''
+  }
 };
 
 process.env.NODE_ENV = process.env.NODE_ENV || config.dev;
