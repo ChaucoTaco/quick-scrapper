@@ -43,7 +43,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
   console.log('connected to the db!')
   const selectors = {
-    title: '.title',
+    title: 'p.title',
     comments: '.comments',
     karma: '.score.unvoted'
   }
