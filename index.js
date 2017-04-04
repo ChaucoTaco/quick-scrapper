@@ -16,6 +16,7 @@ db.once('open', () => {
 
 app.use(morgan('dev'));
 // app.use(express.static('client'));
+app.use(allowCrossDomain);
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
